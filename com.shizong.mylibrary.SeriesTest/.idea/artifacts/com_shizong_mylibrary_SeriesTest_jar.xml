@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="com.shizong.mylibrary.SeriesTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_shizong_mylibrary_SeriesTest_jar</output-path>
+    <root id="archive" name="com.shizong.mylibrary.SeriesTest.jar">
+      <element id="module-output" name="com.shizong.mylibrary.SeriesTest" />
+    </root>
+  </artifact>
+</component>

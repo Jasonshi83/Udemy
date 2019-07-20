@@ -1,0 +1,108 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.*?>
+<!--<?import javafx.lang.String?>-->
+
+<?import java.lang.String?>
+<?import javafx.scene.control.ChoiceBox?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="hello">
+            <graphic>
+                <ImageView>
+                    <Image url="@/TipOfTheDay24.gif"/>
+                </ImageView>
+            </graphic>
+
+    </Button>
+
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="this is a label">
+        <graphic>
+            <ImageView>
+                <Image url="@/TipOfTheDay24.gif"/>
+            </ImageView>
+        </graphic>
+    </Label>
+
+    <fx:define>
+        <ToggleGroup fx:id="colorToggleGroup"/>
+        <ToggleGroup fx:id="ToggleButtonGroup"/>
+
+    </fx:define>
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="2">
+        <RadioButton text="Red" toggleGroup="$colorToggleGroup"/>
+        <RadioButton text="Yellow" toggleGroup="$colorToggleGroup"/>
+        <RadioButton text="Blue" toggleGroup="$colorToggleGroup"/>
+    </VBox>
+
+
+
+
+    <CheckBox text="Subscrible to our newLetter" GridPane.rowIndex="0" GridPane.columnIndex="3" indeterminate="false"/>
+
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="4">
+        <CheckBox text = "Dog" />
+        <CheckBox text = "Cat"/>
+        <CheckBox text = "Bird"/>
+    </VBox>
+
+    <HBox GridPane.rowIndex="0" GridPane.columnIndex="5">
+        <ToggleButton text = "Toggle Me" toggleGroup="$ToggleButtonGroup"/>
+        <ToggleButton text = "Toggle you" toggleGroup="$ToggleButtonGroup"/>
+        <ToggleButton text = "Toggle him" toggleGroup="$ToggleButtonGroup"/>
+    </HBox>
+
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+    <PasswordField GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <ComboBox GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.columnSpan="1" editable="false">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value = "This is Option 1"/>
+                <String fx:value = "This is Option 2"/>
+                <String fx:value = "This is Option 3"/>
+                <String fx:value = "This is Option 4"/>
+                <String fx:value = "This is Option 5"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value = "This is Option 2"/>
+        </value>
+    </ComboBox>
+
+    <ChoiceBox GridPane.rowIndex="1" GridPane.columnIndex="4">
+        <items>
+            <FXCollections fx:factory = "observableArrayList">
+                <String fx:value = "cb 1"/>
+                <String fx:value = "cb 2"/>
+                <String fx:value = "cb 3"/>
+                <String fx:value = "cb 4"/>
+                <String fx:value = "cb 5"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+
+
+
+
+
+</GridPane>
+
