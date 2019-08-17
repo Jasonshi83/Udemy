@@ -33,7 +33,6 @@
                     <Image url="@/TipOfTheDay24.gif"/>
                 </ImageView>
             </graphic>
-
     </Button>
 
     <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="this is a label">
